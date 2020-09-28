@@ -1,0 +1,15 @@
+apiVersion: tekton.dev/v1alpha1
+kind: TaskRun
+metadata:
+  creationTimestamp: null
+  generateName: task-with-parameters-run-
+  namespace: default
+spec:
+  inputs: {}
+  outputs: {}
+  serviceAccountName: ""
+  taskRef:
+    name: task-with-parameters
+  timeout: 1h0m0s
+status:
+  podName: ""

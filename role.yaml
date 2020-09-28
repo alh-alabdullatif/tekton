@@ -1,0 +1,9 @@
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1beta1
+metadata:
+  namespace: default
+  name: tutorial-role
+rules:
+- apiGroups: ["", "extensions", "apps"]
+  resources: ["deployments", "deployments.apps", "replicasets", "pods"]
+  verbs: ["*"]

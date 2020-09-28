@@ -1,0 +1,15 @@
+apiVersion: tekton.dev/v1alpha1
+kind: TaskRun
+metadata:
+  creationTimestamp: null
+  generateName: t-task-run-
+  namespace: tekton-tasks
+spec:
+  inputs: {}
+  outputs: {}
+  serviceAccountName: ""
+  taskRef:
+    name: t-task
+  timeout: 1h0m0s
+status:
+  podName: ""

@@ -1,0 +1,12 @@
+network:
+    ethernets:
+        enp0s3:
+            addresses: [172.28.128.11/24]
+            dhcp4: no
+            nameservers:
+                addresses: [8.8.8.8,8.8.4.4]        
+        enp0s8:
+            dhcp4: true
+            dhcp6: true
+    version: 2
+    renderer: networkd
